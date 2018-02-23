@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">CurrencyConvertor</string>
+
+
+    <string name="database_path">data/data/com.example.ben.currencyconvertor/databases/</string>
+    <string name="database_name">currencies.sqlite</string>
+    <string name="query_currency_selector">SELECT * FROM currencies</string>
+    <string name="query_rate_selector">SELECT * FROM rates WHERE FROM_CODE = \"%1$s\"</string>
+    <string name="query_top_currency_id_selector">SELECT TOP _id from currencies ORDER BY _ID DESC</string>
+    <string name="query_top_rate_id_selector">SELECT TOP _id from rates ORDER BY _ID DESC</string>
+    <string name="query_insert_currency">INSERT or REPLACE INTO currencies(_id, CODE, LAST_UPDATE, FAV_INDEX) values ((select _id from currencies where CODE= \"%1$s\"),\"%1$s\",\"%2$s\",%3$d)</string>
+    <string name="query_insert_rate">INSERT or REPLACE INTO rates(_id, FROM_CODE, TO_CODE, RATE) values ((select _id from rates where FROM_CODE= \"%1$s\" and TO_CODE=\"%2$s\"),\"%1$s\",\"%2$s\",%3$s)</string>
+
+
+    <string name="action_retrieve_from_url">ACTION_RETRIEVE_URL</string>
+    <string name="action_retrieve_from_db">ACTION_RETRIEVE_DB</string>
+    <string name="action_save_to_db">ACTION_SAVE_DB</string>
+    <string name="parcel_currency">PARCEL_CURRENCY</string>
+    <string name="parcel_currency_list">PARCEL_CURRENCY_LIST</string>
+    <string name="param_url">URL</string>
+    <string name="param_receiver">CURRENCY_RECEIVER</string>
+
+
+    <string name="button_setMain">Set Main</string>
+    <string name="button_setFav">Set Favourite</string>
+    <string name="button_unsetFav">Remove Favourite</string>
+    <string name="button_displayValues">Display Values</string>
+    <string name="button_displayRates">Display Rates</string>
+
+
+    <string name="edit_text_default_value">0.00</string>
+</resources>

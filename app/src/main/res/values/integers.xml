@@ -1,0 +1,18 @@
+<resources>
+    <integer name="field_currency">1</integer>
+    <integer name="field_last_updated">2</integer>
+    <integer name="field_fav_index">3</integer>
+    <integer name="field_from_code">1</integer>
+    <integer name="field_to_code">2</integer>
+    <integer name="field_rate">3</integer>
+
+
+    <integer name="data_retry_interval">500</integer>
+
+
+    <integer name="main_currency">-1</integer>
+    <integer name="non_favourite_currency">0</integer>
+
+
+    <integer name="deselected">-1</integer>
+</resources>
